@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RSS</title>
+  </head>
+  <body>
+    {% for item in items %}
+    <a href='{{ item.link }}'>{{ item.title }}<a/>{{ item.description }}
+    <br/>
+    {% endfor %}
+  </body>
+</html>
